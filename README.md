@@ -1,44 +1,59 @@
-WEATHER DASHBOARD
+# Weather Dashboard
 
-OVERVIEW:
-for my final project for cs50w i decided to make a weather dashboard application, the app is built using django, css, javascrit and html.
+## Overview
 
-FEATURES:
+For my final project for CS50W, I developed a Weather Dashboard application. This web app is built using Django, HTML, CSS, and JavaScript, integrating various APIs to provide users with detailed weather information. The goal was to create a user-friendly interface for checking weather conditions and forecasts for different locations.
+
+## Features
+
 - Search for weather forecasts by city name.
 - View current weather conditions, including temperature, humidity, wind speed, and pressure.
 - Display sunrise and sunset times.
 - View hourly forecasts for the next 9 hours.
 - Display a 5-day weather forecast.
-- Change the theme colour of the page
-- Search weather forecast by current location
+- Change the theme color of the page.
+- Search weather forecast by current location.
 
+## Technologies Used
 
-TECHNOLOGIES USED:
 - Django: Web framework for building the backend.
-- OpenWeatherMap API: Used for fetching weather data.
+- OpenWeatherMap API: Fetches weather data for different locations.
 - Bootstrap: Front-end framework for styling.
-- JavaScript: Used for dynamic interactions on the client side.
-- Boxicons: for nice icons
-- Worldtime API: for fetching the current time on a certain location
-- Sunrise and sunset API: to know the sunrise and sunset of a city (this info is not given in the OpenWeatherMap API)
+- JavaScript: Manages dynamic interactions on the client side.
+- Boxicons: Used for stylish icons.
+- Worldtime API: Fetches the current time of a specified location.
+- Sunrise and sunset API: Determines the sunrise and sunset times for a city.
 
+## Complexity
 
+The main complexity of the app lies in the integration of multiple APIs. The project utilizes three different APIs to gather comprehensive weather data, and presenting this information on the HTML required careful planning. Significant time was invested in designing and styling the interface using CSS to ensure an appealing and responsive website.
 
-COMPLEXITY:
-i think the major complexity of the app is the use of API, i used 3 diferent api on this projects and also having to display, all that information on the html was a real challenge to me, i also spent a lot of time on the css so that the website looks nice
+## Files Created
 
+- `styles.css`: Contains all the CSS used for styling the app.
+- `index.html`: Holds the HTML structure of the app.
+- `weather.js`: Manages JavaScript logic, including API calls and theme-changing button logic.
 
-FILES CREATED:
-styles.css: this file contains all the css used on the app
-index.html: this file contains all the html used on the app
-weather.js: this file contains all the javascript used on the app like the api calls and the theme changing button logic
+## How to Run
 
+1. Clone the repository:
 
-HOW TO RUN:
-    git clone https://github.com/lolocompa/weather_dashboard.git.
-    cd weather_dashboard.
-    get all API keys and update in the weather.js file.
-    python manage.py runserver.
-    Open your web browser and navigate to [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
-.
+    ```bash
+    git clone https://github.com/lolocompa/weather_dashboard.git
+    cd weather_dashboard
+    ```
 
+2. Obtain API keys for OpenWeatherMap, Worldtime, and Sunrise and update them in the `weather.js` file.
+
+3. Run the Django development server:
+
+    ```bash
+    python manage.py runserver
+    ```
+
+4. Open your web browser and navigate to [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
+
+## Additional Information
+
+- Ensure API keys are kept secure and not shared publicly.
+- Styling has been optimized for a visually pleasing experience across devices.
